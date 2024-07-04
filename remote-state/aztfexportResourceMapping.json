@@ -1,0 +1,22 @@
+{
+	"/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate": {
+		"resource_id": "/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.KeyVault/vaults/subsciption-id-dev": {
+		"resource_id": "/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.KeyVault/vaults/subsciption-id-dev",
+		"resource_type": "azurerm_key_vault",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks": {
+		"resource_id": "/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks",
+		"resource_type": "azurerm_storage_account",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks/blobServices/default/containers/tfstate": {
+		"resource_id": "https://devtfstateaks.blob.core.windows.net/tfstate",
+		"resource_type": "azurerm_storage_container",
+		"resource_name": "res-4"
+	}
+}

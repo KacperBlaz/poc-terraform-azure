@@ -21,5 +21,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "this" {
   name     = "test"
-  location = "West Europe"
+  location = "eastus"
 }
