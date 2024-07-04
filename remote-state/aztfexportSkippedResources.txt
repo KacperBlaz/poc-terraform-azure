@@ -1,0 +1,6 @@
+Following resources are marked to be skipped:
+
+- /subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks/blobServices/default
+- /subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks/fileServices/default
+- /subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks/queueServices/default
+- /subscriptions/5bac558b-df0a-4ab0-bd96-f46581c2341e/resourceGroups/tfstate/providers/Microsoft.Storage/storageAccounts/devtfstateaks/tableServices/default
