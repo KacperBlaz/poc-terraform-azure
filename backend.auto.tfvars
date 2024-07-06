@@ -1,6 +1,0 @@
-environment          = "dev"
-region               = "westeurope"
-resource_group_name  = "tfstate"
-storage_account_name = "tfstatedevtest35"
-container_name       = "tfstate"
-project_name         = "ForTech"
