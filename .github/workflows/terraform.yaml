@@ -7,12 +7,13 @@ on:
       - dev
       - uat
       - prod
-  pull_request:
+  pull_request_target:
     branches:
       - main
       - dev
       - uat
       - prod
+  workflow_call:
 
 #Special permissions required for OIDC authentication
 permissions:
