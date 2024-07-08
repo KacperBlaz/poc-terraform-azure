@@ -25,4 +25,4 @@ env:
 
 jobs:
   terraform-workflow:
-    uses: KacperBlaz/poc-terraform-azure/.github/workflows/terraform.yml@workflows
+    uses: KacperBlaz/poc-terraform-azure/.github/workflows/terraform.yaml@workflows
