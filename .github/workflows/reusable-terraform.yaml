@@ -14,10 +14,10 @@ permissions:
 jobs:
   terraform-workflow:
     uses: KacperBlaz/poc-terraform-azure/.github/workflows/terraform.yaml@workflows
-  with:
-    environment: dev
-  secrets:
-    ARM_SKIP_PROVIDER_REGISTRATION: "${{ secrets.ARM_SKIP_PROVIDER_REGISTRATION }}"
-    ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
-    ARM_SUBSCRIPTION_ID: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
-    ARM_TENANT_ID: "${{ secrets.AZURE_TENANT_ID }}"
+    with:
+      environment: dev
+    secrets:
+      ARM_SKIP_PROVIDER_REGISTRATION: "${{ secrets.ARM_SKIP_PROVIDER_REGISTRATION }}"
+      ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
+      ARM_SUBSCRIPTION_ID: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+      ARM_TENANT_ID: "${{ secrets.AZURE_TENANT_ID }}"
