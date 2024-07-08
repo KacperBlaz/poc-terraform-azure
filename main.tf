@@ -20,6 +20,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "this" {
-  name     = "test"
+  name     = "bla"
   location = "eastus"
 }
