@@ -4,9 +4,15 @@ on:
   push:
     branches:
       - main
+      - dev
+      - uat
+      - prod
   pull_request:
     branches:
       - main
+      - dev
+      - uat
+      - prod
 
 #Special permissions required for OIDC authentication
 permissions:
