@@ -1,6 +1,9 @@
 # Local .terraform directories
 **/.terraform/*
 .idea/*
+.terraform.lock.hcl
+.terraform
+modules
 remote-state/.terraform*
 # .tfstate files
 *.tfstate

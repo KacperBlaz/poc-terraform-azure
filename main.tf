@@ -1,25 +1,35 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.110.0"
-    }
-  }
-  backend "azurerm" {
-    key                  = "terraform.tfstate"
-    resource_group_name  = "tfstate"
-    storage_account_name = "devtfstateaks"
-    container_name       = "tfstate"
-    use_oidc             = true
-  }
-}
-
-provider "azurerm" {
-  features {}
-  use_oidc = true
-}
-
 resource "azurerm_resource_group" "this" {
-  name     = "test"
-  location = "eastus"
+  name     = "production"
+  location = var.location
 }
+
+#module "vnet" {
+#  source = "./modules/vnet"
+#  location = var.location
+#  environment = var.environment
+#  resource_group_name = azurerm_resource_group.this.name
+#  vnet_address_space = var.vnet_address_space
+##  tags = var.tags
+#  subnet_names = var.subnet_names
+#  subnet_prefixes = var.subnet_prefixes
+#
+#
+#
+#
+#}
+#
+#module "aks" {
+#  source              = "Azure/aks/azurerm"
+#  resource_group_name = azurerm_resource_group.this.name
+#  node_pools = {
+#
+#  }
+#  cluster_name                         = "aks"
+#  cluster_log_analytics_workspace_name = "aks-log-analytics-workspace"
+#  prefix                               = var.environment
+#  role_based_access_control_enabled    = var.role_based_access_control_enabled
+#  network_plugin                       = "azure"
+#  network_policy                       = "calico"
+#  load_balancer_sku                    = "standard"
+#
+#}
